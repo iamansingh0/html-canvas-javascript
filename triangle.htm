@@ -1,0 +1,30 @@
+<head>
+    <title>triangle</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        #canvas {
+            background-color: #00ffe9;
+            position: relative;
+            top: 25%;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"
+    width="400" height="400"></canvas>
+
+
+<script>
+    const el = document.getElementById("canvas");
+    const ctx = el.getContext('2d');
+
+    // line
+    ctx.moveTo(50, 350); // (0, 0 are in the top left corner)
+    ctx.lineTo(350, 350); // y increases coming down to the page
+    ctx.lineTo(350, 50);
+    ctx.lineTo(50, 350);
+    ctx.stroke();
+</script>
+</body>
