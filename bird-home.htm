@@ -1,5 +1,5 @@
 <head>
-    <title>Home</title>
+    <title>Bird's Home</title>
     <style>
         body {
             text-align: center;
@@ -20,7 +20,7 @@
     <script>
         var canvas = document.getElementById("canvas");
         var ctx = canvas.getContext("2d");
-        
+        const pi = Math.PI;
         ctx.moveTo(70, 330);
         ctx.lineTo(330, 330);
         ctx.lineTo(330, 140);
@@ -45,7 +45,7 @@
         // base
         ctx.beginPath();
         ctx.rect(70, 330, 260, 20);
-        ctx.fillStyle = "black";
+        ctx.fillStyle = "red";
         ctx.fill();
         ctx.stroke();
 
@@ -54,6 +54,44 @@
         ctx.arc(200, 220, 50, 0, 2*Math.PI);
         ctx.fillStyle = "black";
         ctx.fill();
+        ctx.stroke();
+
+        // bird
+        ctx.beginPath();
+        ctx.moveTo(290, 330);
+        ctx.lineTo(290, 320);
+        ctx.lineTo(295, 320);
+        ctx.lineTo(295, 330);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(292.5, 307, 13, 6.4, 3);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(292.5, 307, 13, (139*pi)/90, (65*pi)/36);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(276, 288, 20, 3.1, 2.8);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(271, 281, 7, 0, 7);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(263, 294);
+        ctx.lineTo(243, 296);
+        ctx.lineTo(262, 286);
+        ctx.lineTo(264, 294);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(290, 301);
+        ctx.lineTo(297, 311);
+        ctx.lineTo(318, 305);
+        ctx.lineTo(294, 298);
         ctx.stroke();
     </script>
 </body>
