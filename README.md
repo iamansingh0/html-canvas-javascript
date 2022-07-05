@@ -7,5 +7,5 @@
 
 2. Bird's Home:
 <p align="center">
-<img src="home.png" width=200 height=200>
+<img src="home.png" width=300 height=200>
 </p>
